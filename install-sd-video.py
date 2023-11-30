@@ -31,7 +31,7 @@ checkpoint_urls = [
 ]
 
 for url in checkpoint_urls:
-    run_command(["curl", "-L", url, "-o", os.path.join("Checkpoints", os.path.basename(url).split("?")[0])])
+    run_command(["curl", "-L", url, "-o", os.path.join("checkpoints", os.path.basename(url).split("?")[0])])
 
 # Download the requirements.txt file to the /requirements directory
 os.makedirs("requirements", exist_ok=True)
